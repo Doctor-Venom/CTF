@@ -97,6 +97,7 @@ for pair in itertools.permutations(indices, 3):
         plaintext = cipher.decrypt(ciphertext)
         if b"RITSEC" in plaintext:
             print(plaintext)
+            break
         print('\r', k2, sep=' ', end='')
         del k2
 #solution: [43, 126, 21, 21, 40, 174, 210, 166, 171, 247, 21, 136, 9, 207, 79, 60]b'RITSEC{K0rr3LA710n_CAN_50M371m35_1MpLY_cau5A710N_24544110ad75a4}'
